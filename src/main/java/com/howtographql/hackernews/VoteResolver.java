@@ -7,7 +7,6 @@ public class VoteResolver implements GraphQLResolver<Vote> {
   private final UserRepository userRepository = new UserRepository();
 
   public User user(Vote vote) {
-    System.out.println("here");
     try {
       User user = userRepository.findById(vote.getUserId());
       System.out.println(user.id);

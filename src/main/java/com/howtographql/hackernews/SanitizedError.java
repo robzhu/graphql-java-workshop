@@ -6,7 +6,6 @@ import graphql.ExceptionWhileDataFetching;
 public class SanitizedError extends ExceptionWhileDataFetching {
   public SanitizedError(ExceptionWhileDataFetching inner) {
     super(inner.getException());
-    System.out.println("SanitizedError");
   }
 
   @Override
